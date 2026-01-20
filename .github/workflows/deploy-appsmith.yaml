@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest  # Run on Ubuntu
 
     steps:
-      - run: "curl -f --location --request POST https://app.appsmith.com/api/v1/git/deploy/app/65f14c735?branchName=master --header 'Authorization: Bearer ${{ secrets.APPSMITH_CD_KEY }}'"
+      - run: "curl --location --fail-early --request POST https://smartforce.demo.appsmith.com/api/v1/git/applications/696e75c9f5c31a2d63a55cdb/deploy?refName=master --header 'Authorization: Bearer ${{3f3a838ee66b17c42c28b393a692c40628ff4342ede2171474ba5761b16b9be7bd2e6f55aa82b3173c9322fbc5f58bb98603d1dead0e3fa4d02ed91673b9df8f81b948742ba75fc2de1117f02ec966b15c9ad747cb34fdf3ce8dbb8451e67168560c5b5179f8dde57394d5d43d1794e868abf9a967071b8a1c25a5f55bf980f06740c66988beab5c54ffb066ab49b78c2cf748c97a471e3b157b41e479d48df1aacf31dd85ffef4524d605d63da7114a867dfda299007007fded8bdaaf25f421e443b852e89e4a15c107ed6c068f747ad3554a5d77bec584ecd2f14cd7f5c4d1}}'"
