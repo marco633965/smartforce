@@ -1,0 +1,3 @@
+UPDATE public."users" SET
+    "country" = '{{JSONForm1.formData.country}}'
+  WHERE id={{UsersTable.selectedRow}}; -- Specify a valid condition here. Removing the condition may update every row in the table!
